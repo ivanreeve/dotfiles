@@ -11,13 +11,6 @@
       "newline": true,
       "segments": [
         {
-          "background": "transparent",
-          "foreground": "p:white",
-          "style": "plain",
-          "template": "\u250c",
-          "type": "text"
-        },
-        {
           "background": "#4747b4",
           "foreground": "p:white",
           "properties": {
@@ -45,14 +38,7 @@
           "type": "session"
         },
         {
-          "background": "transparent",
-          "foreground": "#c9a8e9",
-          "style": "plain",
-          "template": "",
-          "type": "session"
-        },
-        {
-          "background": "#ffffd6",
+          "background": "#dfd9f0",
           "foreground": "p:black",
           "properties": {
             "branch_icon": " \ue0a0 "
@@ -71,14 +57,12 @@
         {
           "background": "transparent",
           "foreground": "p:white",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "folder_icon": "\uf07b",
-            "folder_separator_template": "<#4747b4> \u00bb </>",
-            "home_icon": "\ueb06",
-            "style": "agnoster"
+            "style": "folder"
           },
-          "style": "plain",
-          "template": "<p:white>\u2514</><#4747b4>[</> {{.Path}} <#4747b4>]</>",
+          "style": "powerline",
+          "template": " \ue5ff <#93d0ff> \u00bb </>{{ .Path }} ",
           "type": "path"
         }
       ]
