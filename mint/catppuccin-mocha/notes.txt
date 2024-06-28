@@ -1,0 +1,3 @@
+ivanreeve @ github
+
+oh-my-posh, neofetch(optional) must be invoked on terminal startup
