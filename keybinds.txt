@@ -1,7 +1,9 @@
 alt+f4 | close app
 alt+f | toggle maximize
 alt+x | xkill 
+alt+t | open terminal
+alt+tab | switch tabs
 alt+space | top edge tab
 
 ctrl+space | center tab
-alt+tab | switch tabs
+ctrl+/ | minimize tab
