@@ -12,7 +12,7 @@
 
 local vim = vim
 local Plug = vim.fn['plug#']
-local PLUGIN_PATH = '~/.local/share/nvim/plugins' -- path depends on the OS
+local PLUGIN_PATH = '~/.local/share/nvim/plugins'
 
 vim.call('plug#begin',PLUGIN_PATH)
 
@@ -152,7 +152,6 @@ require('nvim-autopairs').setup()
 
 require('nvim-treesitter.configs').setup({ highlight = { enable = true, } }) -- Treesitter requires MinGW gcc compiler, :TSInstall <lang> | All, to parse highlighter
 
-
 -- === xxxxxxxx END OF PLUGINS xxxxxxxx === --
 
 
@@ -184,7 +183,7 @@ vim.cmd('set tabstop=4')
 vim.cmd('set shiftwidth=4')
 vim.cmd('set expandtab')
 vim.cmd('set clipboard=unnamed')
-vim.cmd('cd ~/Desktop/projects') -- working directory
+vim.cmd('cd ~/Desktop/projects')
 
 
 -- === Options === --
@@ -192,6 +191,5 @@ vim.cmd('cd ~/Desktop/projects') -- working directory
 vim.opt.cursorline = true
 vim.opt.autochdir = true
 vim.opt.wrap = false
-vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.showmode = false
