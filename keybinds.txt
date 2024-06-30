@@ -7,3 +7,11 @@ alt+space | top edge tab
 
 ctrl+space | center tab
 ctrl+/ | minimize tab
+
+alt+ctrl+leftarrow | switches to left workspace
+alt+ctrl+rightarrow
+
+# WITHIN CHROMIUM
+
+alt+w | close other tabs except current tab
+ctrl+w | close current tab
