@@ -15,3 +15,5 @@ alt+ctrl+rightarrow
 
 alt+w | close other tabs except current tab
 ctrl+w | close current tab
+ctrl+t | create new tab
+ctrl+n | create new tab on another CHROMIUM instance
