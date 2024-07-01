@@ -111,7 +111,7 @@ require('lualine').setup({
     },
     sections = {
         lualine_a = { {'mode',fmt = function(str) return ' ' .. str end } },
-        lualine_x = { {'fileformat', symbols = {unix = ''}} }
+        lualine_x = { {'fileformat', symbols = {unix = ' '}} }
     },
     extensions = {'nvim-tree'}
 })

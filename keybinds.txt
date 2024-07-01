@@ -15,9 +15,16 @@ alt+ctrl+up | show all workspaces, + to make del to remove
 alt+ctrl+left | switches to left workspace
 alt+ctrl+right
 
-# WITHIN CHROMIUM
+# CHROMIUM
 
 alt+w | close other tabs except current tab
 ctrl+w | close current tab
 ctrl+t | create new tab
 ctrl+n | create new tab on another CHROMIUM instance
+ctrl+shift+b | toggle bookmarks bar
+
+# NVIM-Tree
+
+s | open file, esc to exit
+
+
