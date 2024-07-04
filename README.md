@@ -1,1 +1,1 @@
-![screenshot](cinnamon/catppuccin-mocha/screenshots/1.png)
+![screenshot](screenshots/1.png)
