@@ -22,6 +22,7 @@ Plug('catppuccin/nvim', { ['as'] = 'catppuccin' })
 -- Beautify
 Plug('crispgm/nvim-tabline')
 Plug('nvim-lualine/lualine.nvim')
+Plug('goolord/alpha-nvim') --deps: plenary, web-devicons
 
 -- Glyphs
 Plug('ryanoasis/vim-devicons')
@@ -147,6 +148,9 @@ require('ibl').setup() -- Scope requires treesitter to be set up
 
 require('nvim-autopairs').setup()
 
+-- >> ALPHA << --
+
+require('alpha').setup(require'alpha.themes.theta_nike'.config)
 
 -- >> TREESITTER << --
 
