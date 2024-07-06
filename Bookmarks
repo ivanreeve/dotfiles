@@ -1,5 +1,5 @@
 {
-   "checksum": "4cd412a8d1ab7e5a07ba7f5f7a764b23",
+   "checksum": "2038fe1df8fb15cccd011540e47aa9b1",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -36,7 +36,7 @@
          }, {
             "children": [ {
                "date_added": "13364128812988089",
-               "date_last_used": "13364635912510567",
+               "date_last_used": "13364716193891343",
                "guid": "190fd627-c20c-43b6-9400-1cb59b684ae7",
                "id": "44",
                "meta_info": {
@@ -343,10 +343,21 @@
                "name": "The Odin Project",
                "type": "url",
                "url": "https://www.theodinproject.com/dashboard"
+            }, {
+               "date_added": "13364729911831613",
+               "date_last_used": "0",
+               "guid": "047507cf-4342-4cc7-a71f-512c363a081f",
+               "id": "88",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Goodreads",
+               "type": "url",
+               "url": "https://www.goodreads.com/recommendations?origin=rate_books&reg_path=true"
             } ],
             "date_added": "13364214948475878",
             "date_last_used": "0",
-            "date_modified": "13364642500271374",
+            "date_modified": "13364729917508799",
             "guid": "12af05fc-9376-4efc-a619-7709afb990df",
             "id": "75",
             "name": "Edu",
@@ -365,7 +376,7 @@
                "url": "https://www.canva.com/"
             }, {
                "date_added": "13364128365619119",
-               "date_last_used": "13364468352737128",
+               "date_last_used": "13364716291178586",
                "guid": "45230ca9-5cd5-46da-a10d-0ce69346e2bd",
                "id": "39",
                "meta_info": {
@@ -385,17 +396,6 @@
                "name": "Photopea",
                "type": "url",
                "url": "https://www.photopea.com/"
-            }, {
-               "date_added": "13364473361864078",
-               "date_last_used": "0",
-               "guid": "3d030445-f160-41dc-9296-5e75b65e875c",
-               "id": "81",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "ImageGoNord",
-               "type": "url",
-               "url": "https://ign.schrodinger-hat.it/color-schemes"
             } ],
             "date_added": "13363969245918716",
             "date_last_used": "0",
@@ -407,7 +407,7 @@
          }, {
             "children": [ {
                "date_added": "13364128885705346",
-               "date_last_used": "13364569869830828",
+               "date_last_used": "13364720559858388",
                "guid": "f39d9800-cffd-425c-a77c-9879f8db352b",
                "id": "47",
                "meta_info": {
@@ -500,7 +500,7 @@
          } ],
          "date_added": "13363866122120269",
          "date_last_used": "0",
-         "date_modified": "13364642497373719",
+         "date_modified": "13364729911831613",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
