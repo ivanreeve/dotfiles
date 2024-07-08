@@ -1,11 +1,11 @@
 {
-   "checksum": "2038fe1df8fb15cccd011540e47aa9b1",
+   "checksum": "2bbe54a71028ba9d922e11f92f63a61e",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
                "date_added": "13364175674471149",
-               "date_last_used": "13364635833862947",
+               "date_last_used": "13364918986025857",
                "guid": "9330f6b7-d769-4a9e-b6fc-3efac86b0f52",
                "id": "65",
                "meta_info": {
@@ -16,7 +16,7 @@
                "url": "https://www.google.com/"
             }, {
                "date_added": "13364181530662731",
-               "date_last_used": "13364636006961921",
+               "date_last_used": "13364788347534447",
                "guid": "962820da-9bbd-40e0-97a5-ce4a6a223ad9",
                "id": "71",
                "meta_info": {
@@ -36,7 +36,7 @@
          }, {
             "children": [ {
                "date_added": "13364128812988089",
-               "date_last_used": "13364716193891343",
+               "date_last_used": "13364788440477383",
                "guid": "190fd627-c20c-43b6-9400-1cb59b684ae7",
                "id": "44",
                "meta_info": {
@@ -354,10 +354,21 @@
                "name": "Goodreads",
                "type": "url",
                "url": "https://www.goodreads.com/recommendations?origin=rate_books&reg_path=true"
+            }, {
+               "date_added": "13364811819541550",
+               "date_last_used": "0",
+               "guid": "599794c7-461b-4676-8c40-4290feafc2b9",
+               "id": "90",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "1 - YouTube Thumbnail",
+               "type": "url",
+               "url": "https://www.canva.com/design/DAGKPgeMGLo/wRbuwaU6K0GayvYJmtTigA/edit"
             } ],
             "date_added": "13364214948475878",
             "date_last_used": "0",
-            "date_modified": "13364729917508799",
+            "date_modified": "13364888007236101",
             "guid": "12af05fc-9376-4efc-a619-7709afb990df",
             "id": "75",
             "name": "Edu",
@@ -387,7 +398,7 @@
                "url": "https://www.figma.com/files/team/1377988779934189004/recents-and-sharing/recently-viewed?fuid=1377988777258610461"
             }, {
                "date_added": "13364128858576363",
-               "date_last_used": "13364471354272360",
+               "date_last_used": "13364902662995900",
                "guid": "8e68691c-4054-43fd-81b1-68f2de63084c",
                "id": "45",
                "meta_info": {
@@ -407,7 +418,7 @@
          }, {
             "children": [ {
                "date_added": "13364128885705346",
-               "date_last_used": "13364720559858388",
+               "date_last_used": "13364791801778154",
                "guid": "f39d9800-cffd-425c-a77c-9879f8db352b",
                "id": "47",
                "meta_info": {
@@ -429,7 +440,7 @@
                "url": "https://gemini.google.com/app"
             }, {
                "date_added": "13364128924838221",
-               "date_last_used": "13364569894306318",
+               "date_last_used": "13364789731087319",
                "guid": "a4541800-f93f-4e64-8dc6-910c4960ee4a",
                "id": "49",
                "meta_info": {
@@ -438,10 +449,21 @@
                "name": "Copilot",
                "type": "url",
                "url": "https://copilot.microsoft.com/"
+            }, {
+               "date_added": "13364923095032984",
+               "date_last_used": "0",
+               "guid": "c8e99a68-2a01-4458-bd18-4e240a46e5a5",
+               "id": "92",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Face Swap",
+               "type": "url",
+               "url": "https://www.deepswapper.com/"
             } ],
             "date_added": "13364128874127994",
             "date_last_used": "0",
-            "date_modified": "13364128926344746",
+            "date_modified": "13364923103371105",
             "guid": "6000790d-053d-44d2-8f3c-a4fd88aaec04",
             "id": "46",
             "name": "AI",
@@ -469,7 +491,7 @@
          }, {
             "children": [ {
                "date_added": "13364033800600770",
-               "date_last_used": "13364222461395460",
+               "date_last_used": "13364885943484914",
                "guid": "8ca64e17-86fb-4121-a300-f5c9c933bc19",
                "id": "26",
                "meta_info": {
@@ -497,10 +519,21 @@
             "id": "30",
             "name": "...",
             "type": "folder"
+         }, {
+            "date_added": "13364923136018159",
+            "date_last_used": "0",
+            "guid": "71dac1fe-9e10-43cb-b374-b3515712e723",
+            "id": "93",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Gmail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
          } ],
          "date_added": "13363866122120269",
          "date_last_used": "0",
-         "date_modified": "13364729911831613",
+         "date_modified": "13364923136018159",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
