@@ -1,11 +1,11 @@
 {
-   "checksum": "9cb04579ad9629c90dd907d4235d8ac3",
+   "checksum": "1cfc4c05dcaba3128232676c12de3386",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
                "date_added": "13364175674471149",
-               "date_last_used": "13365055012191744",
+               "date_last_used": "13365171948595479",
                "guid": "9330f6b7-d769-4a9e-b6fc-3efac86b0f52",
                "id": "65",
                "meta_info": {
@@ -36,7 +36,7 @@
          }, {
             "children": [ {
                "date_added": "13364128812988089",
-               "date_last_used": "13364788440477383",
+               "date_last_used": "13365229193278174",
                "guid": "190fd627-c20c-43b6-9400-1cb59b684ae7",
                "id": "44",
                "meta_info": {
@@ -227,7 +227,7 @@
             }, {
                "children": [ {
                   "date_added": "13363964129776625",
-                  "date_last_used": "13364221737706403",
+                  "date_last_used": "13365307387215333",
                   "guid": "3d6f8f8b-469b-48d4-936d-5803b4b408a9",
                   "id": "17",
                   "meta_info": {
@@ -532,7 +532,7 @@
             "type": "folder"
          }, {
             "date_added": "13364923136018159",
-            "date_last_used": "13365141024299676",
+            "date_last_used": "13365307406340485",
             "guid": "71dac1fe-9e10-43cb-b374-b3515712e723",
             "id": "93",
             "meta_info": {
@@ -541,10 +541,21 @@
             "name": "Gmail",
             "type": "url",
             "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13365307649722205",
+            "date_last_used": "0",
+            "guid": "73bdf295-bee4-4890-ba23-3d5b268543fd",
+            "id": "97",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Dashboard",
+            "type": "url",
+            "url": "https://canvas.instructure.com/"
          } ],
          "date_added": "13363866122120269",
          "date_last_used": "0",
-         "date_modified": "13365159888616296",
+         "date_modified": "13365307649722205",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",

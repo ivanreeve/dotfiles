@@ -94,9 +94,15 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- ::::PYRIGHT::: --
 
-require('lspconfig').pyright.setup {
+require('lspconfig').pyright.setup({
   capabilities = capabilities
-}
+})
+
+-- ::::CCLS::: --
+
+require('lspconfig').ccls.setup({
+  capabilities = capabilities
+})
 
 -- >> SYMBOLS OUTLINE << --
 
