@@ -160,7 +160,7 @@ require('alpha').setup(require'alpha.themes.theta_nike'.config)
 
 -- >> TREESITTER << --
 
-require('nvim-treesitter.configs').setup({ highlight = { enable = true, } }) -- Treesitter requires MinGW gcc compiler, :TSInstall <lang> | All, to parse highlighter
+require('nvim-treesitter.configs').setup({ highlight = { enable = true, } }) -- Treesitter requires MinGW gcc compiler, :TSInstall <lang>, to parse highlighters
 
 -- === xxxxxxxx END OF PLUGINS xxxxxxxx === --
 
@@ -189,10 +189,10 @@ vim.keymap.set('n', '<F7>', ':SymbolsOutline<CR>', { noremap = true, silent = tr
 -- === Commands === --
 
 vim.cmd('colorscheme catppuccin-mocha')
-vim.cmd('set tabstop=4')    
+vim.cmd('set tabstop=4') -- tab size in spaces
 vim.cmd('set shiftwidth=4')
-vim.cmd('set expandtab')
-vim.cmd('set clipboard=unnamed')
+vim.cmd('set expandtab') -- recognize spaces instead of tabs
+vim.cmd('set clipboard+=unnamedplus')
 vim.cmd('cd ~/Desktop/projects')
 
 

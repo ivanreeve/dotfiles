@@ -1,1 +1,11 @@
 - baseline input lvl is 15
+
+FIX: CCLS on Ubuntu v22.04, Mint Cinnamon 23.1, 'iostream' file not found...
+
+- ccls uses the outdated clang that shipped with my distro, so i installed new using sudo apt install clang
+- tried to compile using clang, got errors about a missing -lstdc++ flag
+- i thought ccls uses gcc but used clang. updated clang, created symlink libstdc++.so -> libstdc++.so.6.
+- probably because ccls tries to load libstdc++.so but can't find it that a symlink worked.
+
+https://askubuntu.com/questions/657343/clang-cannot-find-lstdc-after-system-upgrade
+
