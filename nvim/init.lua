@@ -101,7 +101,7 @@ require('lspconfig').pyright.setup({
 -- ::::CCLS::: --
 
 require('lspconfig').ccls.setup({
-  capabilities = capabilities
+  
 })
 
 -- >> SYMBOLS OUTLINE << --
