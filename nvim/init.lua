@@ -156,7 +156,7 @@ require('nvim-autopairs').setup()
 
 -- >> ALPHA << --
 
-require('alpha').setup(require'alpha.themes.theta_nike'.config)
+require('alpha').setup(require'alpha.themes.theta_custom'.config)
 
 -- >> TREESITTER << --
 
