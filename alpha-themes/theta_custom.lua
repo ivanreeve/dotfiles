@@ -146,43 +146,43 @@ local header = {
     },
 }
 
-local section_mru = {
-    type = "group",
-    val = {
-        {
-            type = "text",
-            val = "Recent files",
-            opts = {
-                hl = "SpecialComment",
-                shrink_margin = false,
-                position = "center",
-            },
-        },
-        { type = "padding", val = 1 },
-        {
-            type = "group",
-            val = function()
-                return { mru(0, cdir) }
-            end,
-            opts = { shrink_margin = false },
-        },
-    },
-}
-
---local buttons = {
+--local section_mru = {
 --    type = "group",
 --    val = {
---        { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
+--        {
+--            type = "text",
+--            val = "Recent files",
+--            opts = {
+--                hl = "SpecialComment",
+--                shrink_margin = false,
+--                position = "center",
+--            },
+--        },
 --        { type = "padding", val = 1 },
---        dashboard.button("e", "  New file", "<cmd>ene<CR>"),
---        dashboard.button("F6", "󰈞  Find file",  "<F6>"),
---        dashboard.button("F5", "󰊄  Live grep", "<F5>"),
---        dashboard.button("c", "  Configuration", "<cmd>e ~/.config/nvim/init.lua <CR>"),
---        dashboard.button("u", "  Update plugins", "<cmd>PlugUpdate<CR>"),
---        dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
+--        {
+--            type = "group",
+--            val = function()
+--                return { mru(0, cdir) }
+--            end,
+--            opts = { shrink_margin = false },
+--        },
 --    },
---    position = "center",
 --}
+
+local buttons = {
+    type = "group",
+    val = {
+        { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
+        { type = "padding", val = 1 },
+        dashboard.button("e", "  New file", "<cmd>ene<CR>"),
+        dashboard.button("F6", "󰈞  Find file",  "<F6>"),
+        dashboard.button("F5", "󰊄  Live grep", "<F5>"),
+        dashboard.button("c", "  Configuration", "<cmd>e ~/.config/nvim/init.lua <CR>"),
+        dashboard.button("u", "  Update plugins", "<cmd>PlugUpdate<CR>"),
+        dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
+    },
+    position = "center",
+}
 
 local config = {
     layout = {

@@ -89,6 +89,7 @@ cmp.setup({
 
 -- 1. Download your preferred language server
 -- 2. Initialize: require('lspconfig').<lsp_name>.setup({})
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
@@ -100,13 +101,15 @@ require('lspconfig').pyright.setup({
 
 -- ::::CCLS::: --
 
-require('lspconfig').ccls.setup({
-  
-})
+require('lspconfig').ccls.setup({})
+
+-- ::::TSSERVER::: --
+
+require'lspconfig'.tsserver.setup({})
 
 -- >> SYMBOLS OUTLINE << --
 
-require("symbols-outline").setup()
+require("symbols-outline").setup({})
 
 
 -- >> LUALINE << --
