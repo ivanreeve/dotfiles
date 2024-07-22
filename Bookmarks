@@ -1,5 +1,5 @@
 {
-   "checksum": "45ab235720756dd06b489036614c2fdd",
+   "checksum": "c19ae7bac533dd53ae1a7438effdff0d",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -594,10 +594,32 @@
             "name": "Collective Nouns: 200+ Most Important Collective Nouns in English - Love English",
             "type": "url",
             "url": "https://loveenglish.org/collective-nouns-list/"
+         }, {
+            "date_added": "13365949098127174",
+            "date_last_used": "0",
+            "guid": "96509cac-3983-4693-851d-ee1d939d6e52",
+            "id": "105",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Installation - Tailwind CSS",
+            "type": "url",
+            "url": "https://tailwindcss.com/docs/installation"
+         }, {
+            "date_added": "13365957699213614",
+            "date_last_used": "0",
+            "guid": "04ed4e73-394c-4150-b153-2b0c080e9537",
+            "id": "106",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Sequence and Series-Definition, Types, Formulas and Examples",
+            "type": "url",
+            "url": "https://byjus.com/maths/sequence-and-series/"
          } ],
          "date_added": "13363866122120269",
          "date_last_used": "0",
-         "date_modified": "13365683432913741",
+         "date_modified": "13365957699213614",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
