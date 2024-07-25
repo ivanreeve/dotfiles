@@ -1,5 +1,5 @@
 {
-   "checksum": "d7672a98c9c174223c0418be96bca08b",
+   "checksum": "fc7880d49741fdf74c42a2a62f68a0ea",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -561,17 +561,6 @@
             "name": "Dashboard",
             "type": "url",
             "url": "https://canvas.instructure.com/"
-         }, {
-            "date_added": "13365593025729589",
-            "date_last_used": "0",
-            "guid": "16327b0c-1f39-4b51-8413-72f59d1bf3c2",
-            "id": "99",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "New Trigonometry Playlist - YouTube",
-            "type": "url",
-            "url": "https://www.youtube.com/playlist?list=PL0o_zxa4K1BVCB8iCVCGOES9pEF6byTMT"
          }, {
             "date_added": "13365957699213614",
             "date_last_used": "0",
