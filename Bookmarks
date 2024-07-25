@@ -1,5 +1,5 @@
 {
-   "checksum": "3f18695e08231abb9a815e05a77368ca",
+   "checksum": "d7672a98c9c174223c0418be96bca08b",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -374,17 +374,6 @@
                "name": "Goodreads",
                "type": "url",
                "url": "https://www.goodreads.com/recommendations?origin=rate_books&reg_path=true"
-            }, {
-               "date_added": "13364811819541550",
-               "date_last_used": "0",
-               "guid": "599794c7-461b-4676-8c40-4290feafc2b9",
-               "id": "90",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "1 - YouTube Thumbnail",
-               "type": "url",
-               "url": "https://www.canva.com/design/DAGKPgeMGLo/wRbuwaU6K0GayvYJmtTigA/edit"
             }, {
                "date_added": "13365159888616296",
                "date_last_used": "0",
