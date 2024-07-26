@@ -1,5 +1,5 @@
 {
-   "checksum": "fc7880d49741fdf74c42a2a62f68a0ea",
+   "checksum": "dd7582d9c88feeecca557c4278578ea5",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -541,7 +541,7 @@
             "type": "folder"
          }, {
             "date_added": "13364923136018159",
-            "date_last_used": "13365757250840931",
+            "date_last_used": "13366435442953446",
             "guid": "71dac1fe-9e10-43cb-b374-b3515712e723",
             "id": "93",
             "meta_info": {
@@ -550,28 +550,6 @@
             "name": "Gmail",
             "type": "url",
             "url": "https://mail.google.com/mail/u/0/#inbox"
-         }, {
-            "date_added": "13365307649722205",
-            "date_last_used": "13365506434236227",
-            "guid": "73bdf295-bee4-4890-ba23-3d5b268543fd",
-            "id": "97",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "Dashboard",
-            "type": "url",
-            "url": "https://canvas.instructure.com/"
-         }, {
-            "date_added": "13365957699213614",
-            "date_last_used": "0",
-            "guid": "04ed4e73-394c-4150-b153-2b0c080e9537",
-            "id": "106",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "Sequence and Series-Definition, Types, Formulas and Examples",
-            "type": "url",
-            "url": "https://byjus.com/maths/sequence-and-series/"
          } ],
          "date_added": "13363866122120269",
          "date_last_used": "0",
