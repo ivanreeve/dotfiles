@@ -26,5 +26,6 @@ ctrl+shift+b | toggle bookmarks bar
 # NVIM-Tree
 
 s | open file, esc to exit
+a | append new file/path
 
 
