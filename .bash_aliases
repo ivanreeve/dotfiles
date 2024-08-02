@@ -12,5 +12,5 @@ bdot()
 
     # output msg
     echo Config files have been copied to dotfiles
-    echo NOTE: fonts, screenshots and wallpapers have to be manually copied. Files that are no longer updated should be stored in numbered folder
+    echo NOTE: fonts, screenshots and wallpapers have to be manually copied.
 }
