@@ -1,5 +1,5 @@
 # Syncs the system configuration to the dotfiles
-# Restart terminal to take effect
+# Restart terminal to see changes
 function bdot()
 {
     mkdir -p ~/Desktop/projects/github/dotfiles/ && cp ~/.bashrc ~/Desktop/projects/github/dotfiles/
