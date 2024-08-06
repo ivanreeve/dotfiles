@@ -125,7 +125,7 @@ echo ""
 eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/current.omp.json)"
 
 # run neofetch on terminal startup
-neofetch
+fastfetch
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
