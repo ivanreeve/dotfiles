@@ -17,12 +17,12 @@ packages=(
     "fastfetch"
     
     "neovim"
-    "lazygit"
     "ripgrep"
+    "lazygit"
 
+    "chromium"
     "nemo"
     "wofi"
-    "chromium"
 
     "gimp"
     "inkscape"
