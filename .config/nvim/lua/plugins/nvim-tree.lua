@@ -3,17 +3,25 @@ return {
     dependencies = {
         "nvim-tree/nvim-web-devicons"
     },
-    opts = {
-        renderer = {
-            symlink_destination = false,
-            indent_markers = {
-                enable = true
+    config = function()
+        require("nvim-tree").setup({
+            --on_attach = my_on_attach,
+            hijack_cursor = true,
+            sync_root_with_cwd = true,
+            renderer = {
+                symlink_destination = false,
+                indent_markers = {
+                    enable = true
+                }
+            },
+            view = {
+                width = 40
+            },
+            actions = {
+                open_file = {
+                    --quit_on_open = true
+                }
             }
-        },
-        actions = {
-            open_file = {
-                quit_on_open = true
-            }
-        }
-    }
+        })
+    end
 }

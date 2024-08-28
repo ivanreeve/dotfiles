@@ -1,8 +1,13 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    main = "nvim-treesitter.configs",
-    opts = {
-        auto_install = true,
-        highlight = { enable = true }
+    {
+        "hiphish/rainbow-delimiters.nvim"
+    },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        main = "nvim-treesitter.configs",
+        opts = {
+            auto_install = true,
+            highlight = { enable = true }
+        }
     }
 }
