@@ -28,6 +28,9 @@ mount /dev/sda3 /mnt        | mount root
 pacman-key --init
 pacman-key --populate
 
+TODO: pacstrap essential pkgs, timedatectl, timesyncd, fix out-of-sync time, creating accounts and passwords, visudo
+
+kulang pa 'to!!!! vvv
 pacstrap /mnt base linux linux-firmware base-devel intel-ucode NetworkManager nano git 
 
 If booting throws ERROR CODE 1962, you may have to spoof the boot entries:
