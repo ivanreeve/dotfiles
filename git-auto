@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# First, ensure authority to push changes to remote repo:
+#
+# git config --global user.name = "<github-name>"
+# git config --global user.email = "<github-email>"
+# git remote -v
+# git remote set-url origin https://<api-key>@github.com/user/repo_name
+
 branch="arch-wayland0"
 git add .
 git commit -m "auto"
