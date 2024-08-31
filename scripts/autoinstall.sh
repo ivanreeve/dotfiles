@@ -6,6 +6,8 @@
 pkglist=(
     "man-db"
     "wayland"
+    "xdg-desktop-portal"
+    "xdg-desktop-portal-wlr"
     "wl-clipboard"
     "hyprland"
     "hyprpaper"
