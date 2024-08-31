@@ -1,7 +1,7 @@
 https://github.com/ivanreeve 
 https://wiki.archlinux.org/title/Installation_guide
 
-Download and verify archiso SHA-256 hash
+Download and verify iso SHA-256 hash
 Create a bootable drive
 
 Boot to archiso
