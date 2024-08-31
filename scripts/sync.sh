@@ -13,6 +13,11 @@ rm -rf ../.bashrc
 cp -f ~/.bashrc ../
 show_log ".bashrc"
 
+# Sync .bash_aliases
+rm -rf ../.bash_aliases
+cp -f ~/.bash_aliases ../
+show_log ".bash_aliases"
+
 # Sync fastfetch
 rm -rf ../.config/fastfetch
 cp -rf ~/.config/fastfetch ../.config

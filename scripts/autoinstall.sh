@@ -6,6 +6,7 @@
 pkgs=(
     "man-db"
     "wayland"
+    "wl-clipboard"
     "hyprland"
     "hyprpaper"
 
@@ -13,7 +14,6 @@ pkgs=(
     "pipewire"
     "pipewire-pulse"
     "unzip"
-
     "grim"
     "slurp"
     "swappy"
@@ -40,6 +40,7 @@ pkgs=(
 function fontinstall(){
     local repo="https://github.com/ivanreeve/fonts.git"
     git clone $repo $HOME/.local/share/fonts/
+    fc-cache fv
 }
 
 # TODO: remove restore script, create a callback instead
