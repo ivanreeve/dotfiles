@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ensure a minimal install with essential packages, such as git
+# Requires git
 # Run this script as superuser
 
 pkgs=(
@@ -36,6 +36,12 @@ pkgs=(
 )
 
 # curl -s https://ohmyposh.dev/install.sh
+
+function pkginstall(){
+    for pkg in "${pkgs[@]}"; do
+        pacman -S $pkg
+    done
+}
 
 function fontinstall(){
     local repo="https://github.com/ivanreeve/fonts.git"

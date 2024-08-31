@@ -1,0 +1,39 @@
+https://github.com/ivanreeve 
+https://wiki.archlinux.org/title/Installation_guide
+
+Download and verify archiso SHA-256 hash
+Create a bootable drive
+
+Boot to archiso
+Connect to internet thru USB ethernet
+
+ping archlinux.org | test for connection
+
+cfdisk | [delete existing partitions], create partitions
+
+/dev/sda1 : >=1gb       | system boot partition
+/dev/sda2 : >=4gb       | swap partition
+/dev/sda3 : >= 32gb     | root partition
+
+WRITE the changes
+
+mkfs.fat -F 32 /dev/sda1    | format /dev/sda1 to fat32
+mkswap /dev/sda2            | format /dev/sda1 to swap
+mkfs.ext4 /dev/sda3         | format /dev/sda3 to ext4
+
+mount /dev/sda1 /mnt/boot   | mount system
+swapon /dev/sda2            | enable swap
+mount /dev/sda3 /mnt        | mount root
+
+pacman-key --init
+pacman-key --populate
+
+pacstrap /mnt base linux linux-firmware base-devel intel-ucode NetworkManager nano git 
+
+If booting throws ERROR CODE 1962, you may have to spoof the boot entries:
+
+efibootmgr | check bootloader entries and order
+
+sudo efibootmgr -Bb 0000 | delete boot entry whose name is "Windows Boot Manager"
+sudo efibootmgr -cd /dev/sda1 -p 1 -L "Windows Boot Manager" -l "\EFI\boot\grubx64.efi" | bootloader grubx64.efi may have a different name
+
