@@ -3,7 +3,7 @@
 # Requires git
 # Run this script as superuser
 
-pkgs=(
+pkglist=(
     "man-db"
     "wayland"
     "wl-clipboard"
@@ -38,7 +38,7 @@ pkgs=(
 # curl -s https://ohmyposh.dev/install.sh
 
 function pkginstall(){
-    for pkg in "${pkgs[@]}"; do
+    for pkg in "${pkglist[@]}"; do
         pacman -S $pkg
     done
 }
