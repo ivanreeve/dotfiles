@@ -2,9 +2,7 @@
 
 # TODO: some configs are still missing
 
-sync_config(){
-    echo -e "Syncing configs"
-
+show_log(){
     echo -e "[LOG] Synced $1"
 }
 
