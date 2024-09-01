@@ -41,6 +41,8 @@ vim.keymap.set("n", "<Leader>s", "<cmd>SymbolsOutline<CR>")
 vim.keymap.set("n", "<Leader>t", "<cmd>tabnew<CR>")
 vim.keymap.set("n", "<Leader>x", "<cmd>close<CR>")
 vim.keymap.set("n", "<Leader>d", "<cmd>bd!<CR>")
+vim.keymap.set("n", "<Leader>bn", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<Leader>bb", "<cmd>bprev<CR>")
 
 -- Split view
 vim.keymap.set("n", "<Leader>;", "<cmd>vsplit<CR>")
