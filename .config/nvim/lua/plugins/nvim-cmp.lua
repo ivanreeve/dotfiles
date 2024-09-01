@@ -1,32 +1,22 @@
 return {
     {
-        "hrsh7th/cmp-buffer"
-    },
-    {
-        "hrsh7th/cmp-path"
-    },
-    {
-        "hrsh7th/cmp-cmdline"
-    },
-    {
-        "hrsh7th/cmp-nvim-lsp"
-    },
-    {
-        "L3MON4D3/LuaSnip"
-    },
-    {
-        "saadparwaiz1/cmp_luasnip"
-    },
-    {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            "onsails/lspkind.nvim"
+            "onsails/lspkind.nvim",
+            "hrsh7th/cmp-nvim-lsp",
+            "L3MON4D3/LuaSnip",
+            "saadparwaiz1/cmp_luasnip",
+            "hrsh7th/cmp-cmdline",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-buffer",
+            "mlaursen/vim-react-snippets"
         },
         -- name
         main = "cmp",
         -- init
         -- opts
         config = function()
+            require("vim-react-snippets").lazy_load()
             local cmp = require("cmp")
             local lspkind = require("lspkind")
 
@@ -59,10 +49,11 @@ return {
                 }),
                 sources = cmp.config.sources(
                     {
+                        { name = "buffer", keyword_length = 1 },
                         { name = "nvim_lsp" },
                         { name = "luasnip" },
                         { name = "path" },
-                        { name = "buffer", keyword_length = 1 }
+                        { name = "", }
                     }
                 )
             })

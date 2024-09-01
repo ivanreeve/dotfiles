@@ -22,5 +22,5 @@ export PATH=$PATH:/usr/local/go/bin
 eval "$(oh-my-posh --init --shell bash --config /home/ivanr/.cache/oh-my-posh/themes/current.omp.json)"
 
 # User Prompt
-# WARNING: Anything put beyond this line COULD prevent the terminal from starting
+# WARNING: Scripts put beyond this line COULD prevent the terminal from loading
 PS1='[\u@\h \W]\$ '

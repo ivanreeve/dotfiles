@@ -7,7 +7,7 @@ vim.keymap.set("n", "<Leader>w", "<cmd>set wrap!<CR>")
 
 -- Search and replace
 vim.keymap.set("n", "<Leader>nhs", "<cmd>nohlsearch<CR>")
-vim.keymap.set("n", "<Leader>r", "<cmd>%s/")
+vim.keymap.set("n", "<Leader>r", ":%s/")
 
 -- Restart LSP
 vim.keymap.set("n", "<Leader>lr", "<cmd>LspRestart<CR>")
