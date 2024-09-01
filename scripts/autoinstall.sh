@@ -27,9 +27,10 @@ pkglist=(
     "ripgrep"
     "lazygit"
 
-    "chromium"
-    "nemo"
     "wofi"
+    "chromium"
+    "gedit"
+    "nemo"
 
     "gimp"
     "inkscape"
