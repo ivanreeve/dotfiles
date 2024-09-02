@@ -17,7 +17,9 @@ return {
                 "lua_ls",
                 "bashls",
                 "rust_analyzer",
-                "clangd"
+                "clangd",
+                "asm_lsp",
+                "awk_ls"
             }
         }
     },
@@ -57,6 +59,8 @@ return {
             require("lspconfig").bashls.setup({})
             require("lspconfig").rust_analyzer.setup({})
             require("lspconfig").clangd.setup({})
+            require("lspconfig").asm_lsp.setup({})
+            require("lspconfig").awk_ls.setup({})
         end
     }
 }
