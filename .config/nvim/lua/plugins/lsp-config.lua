@@ -45,20 +45,20 @@ return {
             end
 
             local capabilities = require("cmp_nvim_lsp").default_capabilities() -- extensible capabilities
-            -- local on_attach= require("cmp_nvim_lsp").default_capabilities() -- extensible capabilities
+            -- local on_attach = require("cmp_nvim_lsp").default_capabilities() -- extensible capabilities
             -- Start your language servers here
             -- require("lspconfig").<lsp_name>.setup({ capabilities = capabilities })
-            require("lspconfig").html.setup({})
-            require("lspconfig").cssls.setup({})
-            require("lspconfig").tailwindcss.setup({})
-            require("lspconfig").tsserver.setup({})
-            require("lspconfig").jsonls.setup({})
+            require("lspconfig").html.setup({ capabilities = capabilities })
+            require("lspconfig").cssls.setup({ capabilities = capabilities })
+            require("lspconfig").tailwindcss.setup({ capabilities = capabilities })
+            require("lspconfig").tsserver.setup({ capabilities = capabilities })
+            require("lspconfig").jsonls.setup({ capabilities = capabilities })
             require("lspconfig").pyright.setup({ capabilities = capabilities })
-            require("lspconfig").lua_ls.setup({})
-            require("lspconfig").bashls.setup({})
-            require("lspconfig").rust_analyzer.setup({})
-            require("lspconfig").clangd.setup({})
-            require("lspconfig").awk_ls.setup({})
+            require("lspconfig").lua_ls.setup({ capabilities = capabilities })
+            require("lspconfig").bashls.setup({ capabilities = capabilities })
+            require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
+            require("lspconfig").clangd.setup({ capabilities = capabilities })
+            require("lspconfig").awk_ls.setup({ capabilities = capabilities })
             --require("lspconfig").gopls.setup({})
             --require("lspconfig").asm_lsp.setup({})
         end

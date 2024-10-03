@@ -16,14 +16,17 @@ vim.opt.number = false
 -- Use relative line numbers
 vim.opt.relativenumber = true
 
+-- Tab Size
+local TAB_SIZE = 4
+
 -- Number of spaces a Tab character represents
-vim.opt.tabstop = 2
+vim.opt.tabstop = TAB_SIZE
 
 -- Makes sure that pressing Tab or Backspace in insert mode behaves as expected
-vim.opt.softtabstop = 2
+vim.opt.softtabstop = TAB_SIZE
 
 -- Number of spaces for each indentation level
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = TAB_SIZE
 
 -- Convert tabs to spaces
 vim.opt.expandtab = true
