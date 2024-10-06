@@ -58,3 +58,12 @@ vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
 -- Ultra folding
 vim.keymap.set("n", "zn", "<cmd> lua require(\"ufo\").openAllFolds()<CR>")
 vim.keymap.set("n", "zm", "<cmd> lua require(\"ufo\").closeAllFolds()<CR>")
+
+-- Context Menu -- is a window, <Leader>x to force close
+-- mouse users + nvimtree users!
+vim.keymap.set("n", "<RightMouse>", function()
+    vim.cmd.exec '"normal! \\<RightMouse>"'
+
+    local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+    require("menu").open(options, { mouse = true })
+end, {})
