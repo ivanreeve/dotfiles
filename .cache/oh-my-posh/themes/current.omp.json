@@ -1,63 +1,63 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "white": "#cdd6f4",
     "black": "#1e1e2e",
+    "blue": "#8aadf4",
     "lavender": "#b2befe",
     "pink": "#f5c2e7",
     "teal": "#94e2d5",
-    "blue": "#8aadf4"
+    "white": "#cdd6f4"
   },
+  "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
   "blocks": [
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "background": "transparent",
-          "foreground": "p:teal",
-          "foreground_templates": [
-            "{{if gt .Code 0}}p:pink{{end}}"
-          ],
           "properties": {
             "always_enabled": true
           },
-          "style": "plain",
           "template": "->",
-          "type": "status"
+          "foreground": "p:teal",
+          "background": "transparent",
+          "type": "status",
+          "style": "plain",
+          "foreground_templates": [
+            "{{if gt .Code 0}}p:pink{{end}}"
+          ]
         }
-      ]
+      ],
+      "newline": true
     },
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": false,
       "segments": [
         {
-          "background": "p:transparent",
-          "foreground": "p:blue",
           "properties": {
             "style": "folder"
           },
-          "style": "plain",
           "template": " \ue5ff {{ .Path }}",
-          "type": "path"
+          "foreground": "p:blue",
+          "background": "p:transparent",
+          "type": "path",
+          "style": "plain"
         },
         {
-          "background": "p:transparent",
-          "foreground": "p:teal",
           "properties": {
             "branch_icon": "\uf418 "
           },
-          "style": "plain",
           "template": " {{.HEAD}}",
-          "type": "git"
+          "foreground": "p:teal",
+          "background": "p:transparent",
+          "type": "git",
+          "style": "plain"
         }
       ]
     }
   ],
-  "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "auto_upgrade": true,
+  "final_space": true
 }

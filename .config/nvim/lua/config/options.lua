@@ -17,7 +17,7 @@ vim.opt.number = false
 vim.opt.relativenumber = true
 
 -- Tab Size
-local TAB_SIZE = 4
+local TAB_SIZE = 2
 
 -- Number of spaces a Tab character represents
 vim.opt.tabstop = TAB_SIZE
