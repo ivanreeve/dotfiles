@@ -18,11 +18,11 @@ vim.cmd([[
 --   end,
 -- })
 
-vim.api.nvim_create_autocmd({ 'BufLeave', 'WinClosed' }, {
-  pattern = 'NvimTree*',
-  callback = function()
-    local def = vim.api.nvim_get_hl_by_name('Cursor', true)
-    vim.api.nvim_set_hl(0, 'Cursor', vim.tbl_extend('force', def, { blend = 0 }))
-    vim.opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
-  end,
-})
+-- vim.api.nvim_create_autocmd({ 'BufLeave', 'WinClosed' }, {
+--   pattern = 'NvimTree*',
+--   callback = function()
+--     local def = vim.api.nvim_get_hl_by_name('Cursor', true)
+--     vim.api.nvim_set_hl(0, 'Cursor', vim.tbl_extend('force', def, { blend = 0 }))
+--     vim.opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
+--   end,
+-- })
