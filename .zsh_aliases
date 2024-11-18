@@ -1,3 +1,4 @@
+
 alias nvim=~/.local/bin/./nvim.appimage
 
 # TMUX
@@ -9,9 +10,10 @@ alias tka="tmux kill-server"
 alias tn="tmux new -s"
 
 # GIT
-alias ga="git add ."
+alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push origin"
+alias gs="git status"
 
 # BASH
 alias ls="ls -alh"

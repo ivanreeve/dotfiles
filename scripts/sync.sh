@@ -7,14 +7,14 @@ show_log(){
 }
 
 # Sync .bashrc
-rm -f ../.bashrc
-cp -f ~/.bashrc ../
-show_log ".bashrc"
+rm -f ../.zshrc
+cp -f ~/.zshrc ../
+show_log ".zshrc"
 
 # Sync .bash_aliases
-rm -f ../.bash_aliases
-cp -f ~/.bash_aliases ../
-show_log ".bash_aliases"
+rm -f ../.zsh_aliases
+cp -f ~/.zsh_aliases ../
+show_log ".zsh_aliases"
 
 # Sync oh-my-posh
 rm -rf ../.cache/oh-my-posh/themes/
