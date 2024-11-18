@@ -16,6 +16,11 @@ rm -f ../.zsh_aliases
 cp -f ~/.zsh_aliases ../
 show_log ".zsh_aliases"
 
+# Sync .tmux.conf
+rm -f ../.tmux.conf
+cp -f ~/.tmux.conf ../
+show_log ".tmux.conf"
+
 # Sync oh-my-posh
 rm -rf ../.cache/oh-my-posh/themes/
 mkdir -p ../.cache/oh-my-posh/themes/
