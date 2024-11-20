@@ -16,6 +16,11 @@ rm -f ../.zsh_aliases
 cp -f ~/.zsh_aliases ../
 show_log ".zsh_aliases"
 
+# Sync keys.conf
+rm -f ../keys.conf
+dconf dump /org/cinnamon/desktop/keybindings/ > ../keys.conf 
+show_log "keys.conf"
+
 # Sync .tmux.conf
 rm -f ../.tmux.conf
 cp -f ~/.tmux.conf ../
