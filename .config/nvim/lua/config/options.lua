@@ -11,7 +11,7 @@ vim.opt.cursorline = true
 vim.opt.wrap = false
 
 -- Show line numbers
-vim.opt.number = false
+vim.opt.number = true
 
 -- Use relative line numbers
 vim.opt.relativenumber = true

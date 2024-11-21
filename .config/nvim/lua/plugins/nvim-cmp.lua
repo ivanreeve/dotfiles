@@ -51,7 +51,16 @@ return {
                     {
                         { name = "nvim_lsp" },
                         { name = "luasnip" },
-                        { name = "buffer", keyword_length = 1 },
+                        { 
+                            -- All buffers
+                            name = "buffer",
+                            keyword_length = 2,
+                            option = {
+                                get_bufnrs = function()
+                                  return vim.api.nvim_list_bufs()
+                                end
+                            }
+                        },
                         { name = "path" }
                     }
                 )
