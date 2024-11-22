@@ -15,5 +15,9 @@ alias gc="git commit -m"
 alias gp="git push origin"
 alias gs="git status"
 
+gcl(){
+  git clone https://${GH_KEY}@github.com/$1 ${@:2}
+}
+
 # BASH
 alias ls="ls -alh"

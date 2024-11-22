@@ -21,6 +21,11 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
+# Load Custom ENV variables: make sure .env file exists in the home dir
+if [ -f ~/.env ]; then
+    . ~/.env
+fi
+
 # Use vi keybindings
 bindkey -v
 
