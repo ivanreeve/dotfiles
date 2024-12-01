@@ -37,3 +37,6 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 eval "$(oh-my-posh --init --shell zsh --config /home/ivanreeve/.cache/oh-my-posh/themes/current.omp.json)"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
