@@ -25,10 +25,6 @@ return {
         }
     },
     {
-        "simrat39/symbols-outline.nvim",
-        config = true
-    },
-    {
         "neovim/nvim-lspconfig",
         config = function()
             vim.diagnostic.config({

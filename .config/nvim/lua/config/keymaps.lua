@@ -25,17 +25,16 @@ vim.keymap.set("n", "<Leader>gbc", "<cmd>Telescope git_bcommits<CR>")
 vim.keymap.set("n", "<Leader>br", "<cmd>Telescope git_branches<CR>")
 vim.keymap.set("n", "<Leader>gg", "<cmd>Telescope git_status<CR>")
 vim.keymap.set("n", "<Leader>gs", "<cmd>Telescope git_stash<CR>")
-
 vim.keymap.set("n", "<Leader>ts", "<cmd>Telescope treesitter<CR>")
+
+-- Toggle Aerial
+vim.keymap.set("n", "<leader>s", "<cmd>AerialToggle!<CR>")
 
 -- NvimTree
 vim.keymap.set("n", "<Leader>o", "<cmd>NvimTreeToggle<CR>")
 
 -- Colorizer
 vim.keymap.set("n", "<Leader>c", "<cmd>ColorizerToggle<CR>")
-
--- Symbols outline
-vim.keymap.set("n", "<Leader>s", "<cmd>SymbolsOutline<CR>")
 
 -- Tabs and buffers
 vim.keymap.set("n", "<Leader>t", "<cmd>tabnew<CR>")
@@ -51,6 +50,9 @@ vim.keymap.set("n", "<Leader><Left>", "<cmd>wincmd h<CR>")
 vim.keymap.set("n", "<Leader><Right>", "<cmd>wincmd l<CR>")
 vim.keymap.set("n", "<Leader><Up>", "<cmd>wincmd k<CR>")
 vim.keymap.set("n", "<Leader><Down>", "<cmd>wincmd j<CR>")
+
+-- Autosave toggle
+vim.keymap.set("n", "<leader>as", ":ASToggle<CR>", {})
 
 -- Change dir to the parent path of focused buffer
 vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
