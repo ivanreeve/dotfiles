@@ -3,6 +3,6 @@ return {
   opts = {
     enabled = true,
     trigger_events = { "TextChanged" },
-    debounce_delay = 5000
+    debounce_delay = 10000
   }
 }

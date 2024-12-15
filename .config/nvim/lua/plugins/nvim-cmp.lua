@@ -24,7 +24,17 @@ return {
 
             cmp.setup({
                 formatting = {
-                    format = lspkind.cmp_format(),
+                    -- format = lspkind.cmp_format(),
+                    fields = { "kind", "abbr", "menu" },
+                    format = function(entry, vim_item)
+                        local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry,
+                            vim_item)
+                        local strings = vim.split(kind.kind, "%s", { trimempty = true })
+                        kind.kind = " " .. (strings[1] or "") .. " "
+                        kind.menu = "    (" .. (strings[2] or "") .. ")"
+
+                        return kind
+                    end,
                 },
                 snippet = {
                     expand = function(args)
@@ -35,7 +45,9 @@ return {
                     completion = {
                         --cmp.config.window.bordered(),
                         --border = "rounded",
-                        winhighlight = "Normal:Pmenu"
+                        winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+                        col_offset = -3,
+                        side_padding = 0,
                     },
                     documentation = {
                         --documentation = cmp.config.window.bordered()
@@ -51,13 +63,13 @@ return {
                     {
                         { name = "nvim_lsp" },
                         { name = "luasnip" },
-                        { 
+                        {
                             -- All buffers
                             name = "buffer",
                             keyword_length = 2,
                             option = {
                                 get_bufnrs = function()
-                                  return vim.api.nvim_list_bufs()
+                                    return vim.api.nvim_list_bufs()
                                 end
                             }
                         },
