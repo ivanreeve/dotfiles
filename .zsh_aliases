@@ -1,4 +1,4 @@
-alias nvim=~/.local/bin/./nvim.appimage
+#alias nvim=~/.local/bin/./nvim.appimage
 
 # TMUX
 alias t="tmux"

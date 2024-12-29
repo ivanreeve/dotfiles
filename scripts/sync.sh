@@ -6,20 +6,15 @@ show_log(){
     echo -e "[LOG] Synced $1"
 }
 
-# Sync .bashrc
+# Sync .zshrc
 rm -f ../.zshrc
 cp -f ~/.zshrc ../
 show_log ".zshrc"
 
-# Sync .bash_aliases
+# Sync .zsh_aliases
 rm -f ../.zsh_aliases
 cp -f ~/.zsh_aliases ../
 show_log ".zsh_aliases"
-
-# Sync keys.conf
-rm -f ../keys.conf
-dconf dump /org/cinnamon/desktop/keybindings/ > ../keys.conf 
-show_log "keys.conf"
 
 # Sync .tmux.conf
 rm -f ../.tmux.conf
@@ -39,8 +34,3 @@ cp -rf ~/.config/nvim/* ../.config/nvim
 mkdir -p ../.config/nvim/lua/plugins/alpha-themes/
 cp -rf ~/.local/share/nvim/lazy/alpha-nvim/lua/alpha/themes/* ../.config/nvim/lua/plugins/alpha-themes/
 show_log "neovim"
-
-# Sync kitty
-rm -rf ../.config/kitty/
-cp -rf ~/.config/kitty/ ../.config
-show_log "kitty"
