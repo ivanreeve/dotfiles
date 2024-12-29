@@ -30,6 +30,8 @@ pacman-key --populate
 
 TODO: pacstrap essential pkgs, timedatectl, timesyncd, fix out-of-sync time, creating accounts and passwords, visudo
 
+https://askubuntu.com/questions/1046214/enable-system-clock-synchronization
+
 kulang pa 'to!!!! vvv
 pacstrap /mnt base linux linux-firmware base-devel intel-ucode NetworkManager nano git 
 
