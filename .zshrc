@@ -4,7 +4,7 @@ autoload -Uz promptinit
 promptinit
 prompt adam1
 
-# LOAD PLUGINS
+# Load zsh plugins
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -14,14 +14,14 @@ export PATH=$PATH:/home/ivanreeve/.local/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Load Aliases
+# Load aliases
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
-# Load Custom ENV variables: make sure .env file exists in the home dir
-if [ -f ~/.env ]; then
-    . ~/.env
+# Load custom local ENV variables: make sure .localenv file exists in the home directory
+if [ -f ~/.localenv ]; then
+    . ~/.localenv
 fi
 
 # Use vi keybindings
