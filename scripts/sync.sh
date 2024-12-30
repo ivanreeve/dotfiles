@@ -39,6 +39,12 @@ mkdir -p ../.config/waybar/
 cp -rf ~/.config/waybar/* ../.config/waybar/
 show_log "waybar"
 
+# Sync wofi
+rm -rf ../.config/wofi/
+mkdir -p ../.config/wofi/
+cp -rf ~/.config/wofi/* ../.config/wofi/
+show_log "wofi"
+
 # Sync wallpapers
 rm -rf ../Desktop/Wallpapers/
 mkdir -p ../Desktop/Wallpapers/
