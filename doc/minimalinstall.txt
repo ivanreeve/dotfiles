@@ -64,6 +64,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 some instructions here are useful: https://youtu.be/68z11VAYMS8?si=8__BC1xTAtsCLDfu
 
+unmount in the ARCHISO image:
+umount -a
+
 If booting throws ERROR CODE 1962, you may have to spoof the boot entries:
 
 efibootmgr | check bootloader entries and order
