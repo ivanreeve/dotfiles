@@ -33,7 +33,13 @@ TODO: pacstrap essential pkgs, timedatectl, timesyncd, fix out-of-sync time, cre
 https://askubuntu.com/questions/1046214/enable-system-clock-synchronization
 
 kulang pa 'to!!!! vvv
-pacstrap /mnt base linux linux-firmware base-devel intel-ucode NetworkManager nano git 
+pacstrap /mnt base linux linux-firmware base-devel intel-ucode networkmanager nano git grub efibootmgr
+
+if NetworkManager fails, install it in the userspace:
+
+su ivanreeve
+sudo pacman -Syu
+sudo pacman -Sy networkmanager
 
 If booting throws ERROR CODE 1962, you may have to spoof the boot entries:
 
