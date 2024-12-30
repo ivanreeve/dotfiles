@@ -51,6 +51,8 @@ passwd
 useradd -m -G wheel /bin/bash ivanreeve
 passwd ivanreeve
 
+nano visudo <- uncomment wheel
+
 ---
 if NetworkManager fails, install it in the userspace:
 
