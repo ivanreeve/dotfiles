@@ -35,6 +35,10 @@ https://askubuntu.com/questions/1046214/enable-system-clock-synchronization
 kulang pa 'to!!!! vvv
 pacstrap /mnt base linux linux-firmware base-devel intel-ucode networkmanager nano git grub efibootmgr
 
+setup hostname, rootpassword, useradd, user passwd
+
+useradd -m -G wheel /bin/bash ivanreeve
+
 if NetworkManager fails, install it in the userspace:
 
 su ivanreeve
