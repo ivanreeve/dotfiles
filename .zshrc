@@ -5,8 +5,8 @@ promptinit
 prompt adam1
 
 # Load zsh plugins
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Additional executable paths
 export PATH=$PATH:/home/ivanreeve/.local/bin
