@@ -30,6 +30,8 @@ pacman-key --populate
 
 TODO: pacstrap essential pkgs, timedatectl, timesyncd, fix out-of-sync time, creating accounts and passwords, visudo
 
+genfstab /mnt > /mnt/etc/fstab
+
 https://askubuntu.com/questions/1046214/enable-system-clock-synchronization
 
 kulang pa 'to!!!! vvv
