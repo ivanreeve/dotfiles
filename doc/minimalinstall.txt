@@ -28,24 +28,36 @@ mount /dev/sda3 /mnt        | mount root
 pacman-key --init
 pacman-key --populate
 
-TODO: pacstrap essential pkgs, timedatectl, timesyncd, fix out-of-sync time, creating accounts and passwords, visudo
+pacstrap /mnt base linux linux-firmware base-devel intel-ucode networkmanager nano git grub efibootmgr
 
 genfstab /mnt > /mnt/etc/fstab
+arch-chroot /mnt
+
+ln -sf /usr/share/zoneinfo/Asia/Manila /etc/localtime
+
+date | to check the time
 
 https://askubuntu.com/questions/1046214/enable-system-clock-synchronization
 
-kulang pa 'to!!!! vvv
-pacstrap /mnt base linux linux-firmware base-devel intel-ucode networkmanager nano git grub efibootmgr
+nano /etc/locale.gen | uncomment the preferred locale
 
-setup hostname, rootpassword, useradd, user passwd
+locale-gen
+
+nano /etc/locale.conf <- LANG=en_US
+
+nano /etc/hostname | set hostname
+passwd
 
 useradd -m -G wheel /bin/bash ivanreeve
+passwd ivanreeve
 
+---
 if NetworkManager fails, install it in the userspace:
 
 su ivanreeve
 sudo pacman -Syu
 sudo pacman -Sy networkmanager
+---
 
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
