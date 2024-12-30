@@ -48,7 +48,7 @@ nano /etc/locale.conf <- LANG=en_US
 nano /etc/hostname | set hostname
 passwd
 
-useradd -m -G wheel /bin/bash ivanreeve
+useradd -m -G wheel -s /bin/bash ivanreeve
 passwd ivanreeve
 
 nano visudo <- uncomment wheel
