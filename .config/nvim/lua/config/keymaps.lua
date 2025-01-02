@@ -51,9 +51,6 @@ vim.keymap.set("n", "<Leader><Right>", "<cmd>wincmd l<CR>")
 vim.keymap.set("n", "<Leader><Up>", "<cmd>wincmd k<CR>")
 vim.keymap.set("n", "<Leader><Down>", "<cmd>wincmd j<CR>")
 
--- Autosave toggle
-vim.keymap.set("n", "<leader>as", ":ASToggle<CR>", {})
-
 -- Change dir to the parent path of focused buffer
 vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
 
