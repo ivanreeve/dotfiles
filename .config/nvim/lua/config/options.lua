@@ -13,6 +13,9 @@ vim.opt.wrap = false
 -- Show line numbers
 vim.opt.number = true
 
+-- Use terminal gui colors
+vim.opt.termguicolors = true
+
 -- Use relative line numbers
 vim.opt.relativenumber = true
 
@@ -40,11 +43,11 @@ vim.opt.laststatus = 3
 -- Automatically insert indentations for new lines
 vim.opt.smartindent = true
 
--- Automatically insert tab to the latest indent 
+-- Automatically insert tab to the latest indent
 vim.opt.smarttab = true
 
 -- Copy indent from the current line when starting a new line
 vim.opt.autoindent = true
 
 -- Hide EOB tilde ~ chars
-vim.opt.fillchars = {eob = " "}
+vim.opt.fillchars = { eob = " " }
