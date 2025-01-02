@@ -1,8 +1,10 @@
 # Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 prompt adam1
+
+# Use 256 colors in the terminal
+export TERM=screen-256color
 
 # Load zsh plugins
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
