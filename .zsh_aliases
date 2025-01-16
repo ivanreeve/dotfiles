@@ -20,4 +20,4 @@ gcl(){
 
 # BASH
 alias ls="ls -alh"
-alias startpg='~/pgadmin4/pgadmin4env/bin/python ~/pgadmin4/pgadmin4env/lib/python3.12/site-packages/pgadmin4/pgAdmin4.py'
+alias startpg='sudo /usr/pgadmin4/bin/setup-web.sh'

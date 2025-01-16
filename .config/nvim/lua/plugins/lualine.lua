@@ -14,7 +14,6 @@ return {
                 end,
 
                 format = function(client_messages)
-
                     --- @param name string
                     --- @param msg string?
                     --- @return string
@@ -80,8 +79,8 @@ return {
                     },
                     globalstatus = true,
                     theme = "auto",
-                    component_separators = { left = "", right = ""},
-                    section_separators = { left = "", right = ""}
+                    component_separators = { left = "", right = "" },
+                    section_separators = { left = "", right = "" }
                 },
                 sections = {
                     lualine_a = {
@@ -141,10 +140,10 @@ return {
                         {
                             "location",
                             icons_enabled = true,
-                            icon = "",
-                            color = { bg = "#eba0ac", fg = "#181825", gui = "bold" },
-                            padding  = { right = 1 },
-                            separator = { left = "" }
+                            icon          = "",
+                            color         = { bg = "#eba0ac", fg = "#181825", gui = "bold" },
+                            padding       = { right = 1 },
+                            separator     = { left = "" }
                         },
                         {
                             "filename",
@@ -162,9 +161,10 @@ return {
                             mode = 0,
                             show_modified_status = true,
                             symbols = {
-                                modified = " 󰤀",  -- Text to show when the file is modified.
+                                modified = " ", -- Text to show when the file is modified.
                             },
                             tabs_color = {
+                                modified = { bg = "#d20f39", fg = "#181825", gui = "bold" },
                                 active = { bg = "#94e2d5", fg = "#181825", gui = "bold" },
                                 inactive = { bg = "#45475a", fg = "#a6adc8", gui = "bold" }
                             }

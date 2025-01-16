@@ -46,10 +46,10 @@ vim.keymap.set("n", "<Leader>bb", "<cmd>bprev<CR>")
 -- Split view
 vim.keymap.set("n", "<Leader>;", "<cmd>vsplit<CR>")
 vim.keymap.set("n", "<Leader>.", "<cmd>split<CR>")
-vim.keymap.set("n", "<Leader><Left>", "<cmd>wincmd h<CR>")
-vim.keymap.set("n", "<Leader><Right>", "<cmd>wincmd l<CR>")
-vim.keymap.set("n", "<Leader><Up>", "<cmd>wincmd k<CR>")
-vim.keymap.set("n", "<Leader><Down>", "<cmd>wincmd j<CR>")
+vim.keymap.set("n", "<Leader>h", "<cmd>wincmd h<CR>")
+vim.keymap.set("n", "<Leader>l", "<cmd>wincmd l<CR>")
+vim.keymap.set("n", "<Leader>k", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<Leader>j", "<cmd>wincmd j<CR>")
 
 -- Change dir to the parent path of focused buffer
 vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
