@@ -1,7 +1,4 @@
-
 #!/bin/sh
-
-# TODO: some configs are still missing
 
 show_log(){
     echo -e "[LOG] Synced $1"
