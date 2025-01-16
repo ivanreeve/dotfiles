@@ -1,5 +1,11 @@
 
+#!/bin/sh
 
+# TODO: some configs are still missing
+
+show_log(){
+    echo -e "[LOG] Synced $1"
+}
 
 # Sync neovim
 rm -rf ../.config/nvim/
