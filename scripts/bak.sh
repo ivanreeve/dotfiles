@@ -26,3 +26,10 @@ rm -rf ../.cache/oh-my-posh/themes/
 mkdir -p ../.cache/oh-my-posh/themes/
 cp -f ~/.cache/oh-my-posh/themes/current.omp.json ../.cache/oh-my-posh/themes/
 show_log "oh-my-posh"
+
+# Sync Keybinds
+rm -rf ../keybinds/
+mkdir -p ../keybinds/
+dconf dump /org/gnome/desktop/wm/keybindings/ > ../keybinds/gnome-keybindings-backup.dconf
+dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > ../keybinds/custom-keybindings-backup.dconf
+show_log "keybinds"
