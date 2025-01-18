@@ -5,6 +5,8 @@ vim.keymap.set("n", "<Leader>n", "<cmd>set number!<CR>")
 vim.keymap.set("n", "<Leader>m", "<cmd>set relativenumber!<CR>")
 vim.keymap.set("n", "<Leader>w", "<cmd>set wrap!<CR>")
 
+vim.keymap.set({ "n", "i" }, "<C-b>", "<C-b>", { noremap = true })
+
 -- Search and replace
 vim.keymap.set("n", "<Leader>nhs", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<Leader>r", ":%s/")
@@ -46,17 +48,17 @@ vim.keymap.set("n", "<Leader>bb", "<cmd>bprev<CR>")
 -- Split view
 vim.keymap.set("n", "<Leader>;", "<cmd>vsplit<CR>")
 vim.keymap.set("n", "<Leader>.", "<cmd>split<CR>")
-vim.keymap.set("n", "<Leader>h", "<cmd>wincmd h<CR>")
-vim.keymap.set("n", "<Leader>l", "<cmd>wincmd l<CR>")
-vim.keymap.set("n", "<Leader>k", "<cmd>wincmd k<CR>")
-vim.keymap.set("n", "<Leader>j", "<cmd>wincmd j<CR>")
+vim.keymap.set("n", "<Leader><Left>", "<cmd>wincmd h<CR>")
+vim.keymap.set("n", "<Leader><Right>", "<cmd>wincmd l<CR>")
+vim.keymap.set("n", "<Leader><Up>", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<Leader><Down>", "<cmd>wincmd j<CR>")
 
 -- Change dir to the parent path of focused buffer
 vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
 
 -- Ultra folding
-vim.keymap.set("n", "zn", "<cmd> lua require(\"ufo\").openAllFolds()<CR>")
-vim.keymap.set("n", "zm", "<cmd> lua require(\"ufo\").closeAllFolds()<CR>")
+vim.keymap.set("n", "<Leader>zz", "<cmd> lua require(\"ufo\").openAllFolds()<CR>")
+vim.keymap.set("n", "<Leader>za", "<cmd> lua require(\"ufo\").closeAllFolds()<CR>")
 
 -- Context Menu -- is a window, <Leader>x to force close
 -- mouse users + nvimtree users!
