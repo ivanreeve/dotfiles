@@ -5,8 +5,6 @@ vim.keymap.set("n", "<Leader>n", "<cmd>set number!<CR>")
 vim.keymap.set("n", "<Leader>m", "<cmd>set relativenumber!<CR>")
 vim.keymap.set("n", "<Leader>w", "<cmd>set wrap!<CR>")
 
-vim.keymap.set({ "n", "i" }, "<C-b>", "<C-b>", { noremap = true })
-
 -- Search and replace
 vim.keymap.set("n", "<Leader>nhs", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<Leader>r", ":%s/")
