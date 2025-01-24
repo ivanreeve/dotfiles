@@ -5,6 +5,9 @@ vim.keymap.set("n", "<Leader>n", "<cmd>set number!<CR>")
 vim.keymap.set("n", "<Leader>m", "<cmd>set relativenumber!<CR>")
 vim.keymap.set("n", "<Leader>w", "<cmd>set wrap!<CR>")
 
+-- Comment Line
+vim.keymap.set("n", "<Leader>c", "<cmd>CommentToggle<CR>")
+
 -- Search and replace
 vim.keymap.set("n", "<Leader>nhs", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<Leader>r", ":%s/")
@@ -34,7 +37,7 @@ vim.keymap.set("n", "<leader>s", "<cmd>AerialToggle!<CR>")
 vim.keymap.set("n", "<Leader>o", "<cmd>NvimTreeToggle<CR>")
 
 -- Colorizer
-vim.keymap.set("n", "<Leader>c", "<cmd>ColorizerToggle<CR>")
+vim.keymap.set("n", "<Leader>cc", "<cmd>ColorizerToggle<CR>")
 
 -- Tabs and buffers
 vim.keymap.set("n", "<Leader>t", "<cmd>tabnew<CR>")
@@ -46,10 +49,18 @@ vim.keymap.set("n", "<Leader>bb", "<cmd>bprev<CR>")
 -- Split view
 vim.keymap.set("n", "<Leader>;", "<cmd>vsplit<CR>")
 vim.keymap.set("n", "<Leader>.", "<cmd>split<CR>")
+
+-- Moving between splits
 vim.keymap.set("n", "<Leader><Left>", "<cmd>wincmd h<CR>")
 vim.keymap.set("n", "<Leader><Right>", "<cmd>wincmd l<CR>")
 vim.keymap.set("n", "<Leader><Up>", "<cmd>wincmd k<CR>")
 vim.keymap.set("n", "<Leader><Down>", "<cmd>wincmd j<CR>")
+
+-- Alternative split navigation
+vim.keymap.set("n", "<Leader>h", "<cmd>wincmd h<CR>")
+vim.keymap.set("n", "<Leader>l", "<cmd>wincmd l<CR>")
+vim.keymap.set("n", "<Leader>k", "<cmd>wincmd k<CR>")
+vim.keymap.set("n", "<Leader>j", "<cmd>wincmd j<CR>")
 
 -- Change dir to the parent path of focused buffer
 vim.keymap.set("n", "<Leader>cd", "<cmd>cd %:p:h<CR>")
