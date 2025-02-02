@@ -8,6 +8,9 @@ vim.keymap.set("n", "<Leader>w", "<cmd>set wrap!<CR>")
 -- Comment Line
 vim.keymap.set("n", "<Leader>c", "<cmd>CommentToggle<CR>")
 
+-- Write
+vim.keymap.set("n", "<Leader>w", ":w!<CR>")
+
 -- Search and replace
 vim.keymap.set("n", "<Leader>nhs", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<Leader>r", ":%s/")
