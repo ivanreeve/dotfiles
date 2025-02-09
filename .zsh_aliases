@@ -7,6 +7,7 @@ alias ta="tmux attach -t"
 alias tk="tmux kill-session -t"
 alias tka="tmux kill-server"
 alias tn="tmux new -s"
+alias pn="pnpm"
 
 # GIT
 alias ga="git add"
