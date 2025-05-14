@@ -16,7 +16,9 @@ return {
             },
             view = {
                 width = 70,
-                relativenumber = true
+                relativenumber = true,
+                side = "right",
+                preserve_window_proportions = true,
             },
             actions = {
                 open_file = {
