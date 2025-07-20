@@ -21,7 +21,7 @@ return {
                 "emmet_language_server"
                 --"gopls", -- deps: go compiler
                 --"asm_lsp", -- deps: cargo
-            }
+            },
         }
     },
     {

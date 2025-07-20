@@ -1,9 +1,5 @@
 -- OPTIONS
 
--- Default path to use at startup
-local DEFAULT_PATH = "$HOME/Downloads"
---vim.cmd("cd " .. DEFAULT_PATH)
-
 -- Highlight current line
 vim.opt.cursorline = true
 
