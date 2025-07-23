@@ -47,3 +47,6 @@ vim.opt.autoindent = true
 
 -- Hide EOB tilde ~ chars
 vim.opt.fillchars = { eob = " " }
+
+-- disable copilot by default
+vim.g.copilot_filetypes = { ['*'] = false }
