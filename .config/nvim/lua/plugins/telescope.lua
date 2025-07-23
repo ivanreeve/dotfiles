@@ -21,7 +21,17 @@ return {
             },
         },
         pickers = {
-            find_files = { hidden = true }
+            find_files = { hidden = true },
+            buffers = {
+                mappings = {
+                    i = {
+                        ["<C-d>"] = "delete_buffer",
+                    },
+                    n = {
+                        ["<C-d>"] = "delete_buffer",
+                    },
+                }
+            }
         }
     }
 }
