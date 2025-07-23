@@ -18,7 +18,8 @@ return {
                 "rust_analyzer",
                 "clangd",
                 "awk_ls",
-                "emmet_language_server"
+                "emmet_language_server",
+                "phpactor"
                 --"gopls", -- deps: go compiler
                 --"asm_lsp", -- deps: cargo
             },
@@ -57,6 +58,7 @@ return {
             require("lspconfig").clangd.setup({ capabilities = capabilities })
             require("lspconfig").awk_ls.setup({ capabilities = capabilities })
             require("lspconfig").emmet_language_server.setup({ capabilities = capabilities })
+            require("lspconfig").phpactor.setup({ capabilities = capabilities })
             --require("lspconfig").gopls.setup({})
             --require("lspconfig").asm_lsp.setup({})
         end
